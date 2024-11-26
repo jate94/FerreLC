@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proforma</title>
+
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ebf1941c;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Contenedor principal */
+        .super_container {
+            padding: 0;
+        }
+
+        /* Encabezado */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo_container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .main_nav {
+            list-style: none;
+            display: flex;
+        }
+
+        .main_nav_list {
+            display: flex;
+            padding: 0;
+        }
+
+        .main_nav_item {
+            margin: 0 15px;
+        }
+
+        .main_nav_item a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px 0;
+            display: inline-block;
+        }
+
+        .main_nav_item a:hover {
+            color: #ff5722;
+        }
+
+        /* Sección Proforma */
+        .proforma {
+            padding: 50px 0;
+        }
+
+        .proforma h1 {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .proforma_form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .proforma_form .form-group {
+            margin-bottom: 20px;
+        }
+
+        .proforma_form label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .proforma_form .form-control {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .proforma_form .form-control:focus {
+            border-color: #ff5722;
+            outline: none;
+        }
+
+        .proforma_form button {
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .proforma_form button:hover {
+            background-color: #e64a19;
+        }
+
+        /* Pie de página */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            position: relative;
+        }
+
+        .footer_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .footer_contact_row {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer_contact_icon {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .footer_contact_icon img {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        .footer_social {
+            display: flex;
+        }
+
+        .footer_social_item {
+            margin-right: 10px;
+        }
+
+        .footer_social_item a {
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .footer_social_item a:hover {
+            color: #ff5722;
+        }
+
+        .footer_bar {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer_copyright {
+            font-size: 14px;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 767px) {
+            .header_content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .main_nav {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .main_nav_list {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .main_nav_item {
+                margin-bottom: 10px;
+            }
+
+            .footer_content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer_social {
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="super_container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header_content">
+                <div class="logo_container">
+                    <div class="logo">
+                        <img src="images/logo4.png" alt="Logo">
+                    </div>
+                    <div class="logo2">
+                        <img src="images/logo6.png" height="50px" alt="Logo">
+                    </div>
+                </div>
+
+                <nav class="main_nav_container">
+                    <div class="main_nav">
+                        <ul class="main_nav_list">
+                            <li class="main_nav_item"><a href="inicio.html">Inicio</a></li>
+                            <li class="main_nav_item"><a href="recomendaciones.html">Recomendaciones</a></li>
+                            <li class="main_nav_item"><a href="productos.html">Productos</a></li>
+                            <li class="main_nav_item"><a href="tips.html">Tips</a></li>
+                            <li class="main_nav_item"><a href="contact.html">Contacto</a></li>
+                            <li class="main_nav_item"><a href="proforma.html">Proforma</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Sección Proforma -->
+        <section class="proforma">
+            <div class="container">
+                <h1>Proforma</h1>
+                <form class="proforma_form" action="submit_form.php" method="POST">
+                    <div class="form-group">
+                        <label for="customer_name">Nombre Completo</label>
+                        <input type="text" id="customer_name" name="customer_name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Producto</label>
+                        <input type="text" id="product" name="product" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Cantidad</label>
+                        <input type="number" id="quantity" name="quantity" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="total_price">Precio Total</label>
+                        <input type="text" id="total_price" name="total_price" class="form-control" readonly>
+                    </div>
+
+                    <button type="submit">Generar Proforma</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+            <div class="footer_content">
+                <div class="footer_contact_row">
+                    <div class="footer_contact_icon">
+                        <img src="images/ubicacion.png" alt="Location">
+                        <span>Riobamba, Ayacucho y Rocafuerte</span>
+                    </div>
+                    <div class="footer_contact_icon">
+                        <img src="images/tel.png" alt="Phone">
+                        <span>+593-99-729-7702</span>
+                    </div>
+                    <div class="footer_contact_icon">
+                        <img src="images/carta.png" alt="Email">
+                        <span>lcferretria@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="footer_social">
+                    <ul class="footer_social_item">
+                        <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_bar">
+                <span>&copy; <script>document.write(new Date().getFullYear());</script> Todos los Derechos Reservados</span>
+            </div>
+        </footer>
+
+    </section>
+
+</body>
+
+</html>
